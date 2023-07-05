@@ -8,7 +8,7 @@
   text-align: center;
   padding-bottom: 30px;
   min-width: 200px;
-  background-color: #f0f0f00c;
+  background: linear-gradient(to right, #a200ff0f, #492ee51f);
   border-radius: 10px;
 }
 
@@ -43,7 +43,7 @@ margin: 5px;
 
   font-family:Helvetica,sans-serif ,Arial;
   color: #f1f1f1;
-  background-color: #f0f0f00c;
+  background-color: #180c4b42;
   padding: 5px;
   
   height: fit-content;
@@ -176,7 +176,7 @@ nav a:hover {
   margin-left: 50px;
   margin-right: 50px;
   margin-top: 20px;
-  background-color: #f0f0f00c; /* Adjust the background color as desired */
+  background: linear-gradient(to right, #a200ff0f, #492ee51f); /* Adjust the background color as desired */
   padding: -20px;
   text-align: center;
   size: -10px;
