@@ -8,7 +8,7 @@
   text-align: center;
   padding-bottom: 30px;
   min-width: 200px;
-  background: linear-gradient(to right, #a200ff0f, #492ee51f);
+  background: linear-gradient(to right, #a200ff26, #492ee52e);
   border-radius: 10px;
 }
 
@@ -139,7 +139,7 @@ p {
 
 /* styles.css */
 header {
-  background: linear-gradient(to right, #a200ff62, #492ee53d);
+  background: linear-gradient(to right,#a200ff26, #492ee52e);
   padding: 10px;
 }
 nav ul {
