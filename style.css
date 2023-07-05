@@ -9,6 +9,7 @@
   padding-bottom: 2%;
   min-width: 200px;
   background-color: #f0f0f00c;
+  border-radius: 10px;
 }
 
 
@@ -23,6 +24,7 @@
   height: auto; /* Allow the image's height to adjust */
   object-fit: contain;
   display: block;
+  border-radius: 10px;
 }
 .item3 a {
 font-size: medium;
@@ -179,7 +181,7 @@ nav a:hover {
   text-align: center;
   size: -10px;
   overflow: visible; /* Adjust the overflow property */
-
+  border-radius: 10px;
 }
 
 
