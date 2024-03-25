@@ -16,7 +16,12 @@
     
 
     <script src="https://unpkg.com/swup@3"></script>
-
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        var video = document.getElementById('myVideo');
+        video.volume = 0.2; // Set volume to 20%
+      });
+    </script>
     <script defer scr="fade.js"></script>
   </head>
   <body>
