@@ -1,9 +1,9 @@
 var scene = new THREE.Scene();
 var camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
 var renderer = new THREE.WebGLRenderer({ antialias: true });
-var minheight = min(2000, window.innerHeight)
-var minwidth = min(3000, window.innerWidth)
-renderer.setSize(minwidth, minheight);
+
+
+renderer.setSize(window.innerWidth, window.innerHeight);
 document.getElementById('icosphere-container').appendChild(renderer.domElement);
 
 document.addEventListener('DOMContentLoaded', function(){
@@ -17,13 +17,20 @@ window.addEventListener('resize', function () {
   document.getElementById("poop").innerText = (window.innerWidth);
   document.getElementById("poop2").innerText = (window.innerHeight);
   
-  if (window.innerHeight || window.innerWidth > 2000) {
-  renderer.setSize(window.innerWidth, window.innerHeight);
-  
+  if (window.innerHeight > 1500 && window.innerWidth > 1500){
+  renderer.domElement.style.width = window.innerWidth + 'px';
+  renderer.domElement.style.height = window.innerHeight + 'px';
   camera.aspect = window.innerWidth / window.innerHeight;
-  camera.updateProjectionMatrix();}
+  camera.updateProjectionMatrix();
+  } else {
+    renderer.setSize(window.innerWidth, window.innerHeight);
+    camera.aspect = window.innerWidth / window.innerHeight;
+    camera.updateProjectionMatrix();
+    }
+
+  }
   
-});
+);
 
 
 
