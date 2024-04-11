@@ -1,7 +1,9 @@
 var scene = new THREE.Scene();
 var camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
 var renderer = new THREE.WebGLRenderer({ antialias: true });
-renderer.setSize(min(2000, window.innerWidth), min(2000, window.innerHeight));
+var minheight = min(2000, window.innerHeight)
+var minwidth = min(3000, window.innerWidth)
+renderer.setSize(minwidth, minheight);
 document.getElementById('icosphere-container').appendChild(renderer.domElement);
 
 document.addEventListener('DOMContentLoaded', function(){
